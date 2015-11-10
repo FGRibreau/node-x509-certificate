@@ -4,7 +4,8 @@
   "description": "Retrieve the public TLS certificate in x509 format from a distant host",
   "main": "x509-certificate.js",
   "scripts": {
-    "test": "mocha -t 10000 *.test.js"
+    "test": "mocha -t 10000 *.test.js",
+    "changelog": "github-changes --o $(node -p 'process.env.npm_package_repository_url.split(\"/\")[3];') --r $(node -p 'a=process.env.npm_package_repository_url.split(\"/\");a[a.length-1].split(\".\")[0]') --token $CHANGELOG_GITHUB_TOKEN_FG -f CHANGELOG.md"
   },
   "bin": {
     "x509-certificate": "cli.js"
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/FGRibreau/node-x509-certificate#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "github-changes": "^1.0.0",
     "mocha": "^2.3.3"
   }
 }
