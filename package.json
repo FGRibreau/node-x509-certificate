@@ -1,12 +1,12 @@
 {
   "name": "x509-certificate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Retrieve the public TLS certificate in x509 format from a distant host",
   "main": "x509-certificate.js",
   "scripts": {
     "test": "mocha -t 10000 *.test.js"
   },
-  "bin":{
+  "bin": {
     "x509-certificate": "cli.js"
   },
   "repository": {
