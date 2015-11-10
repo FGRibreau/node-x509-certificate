@@ -46,6 +46,7 @@ getCertificate(443, 'my-very-own-sni-host.com', {
 # cli
 
 ```bash
+> npm i x509-certificate -g
 > x509-certificate redsmin.com:443
 
 -----BEGIN CERTIFICATE-----
