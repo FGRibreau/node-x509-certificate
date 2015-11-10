@@ -2,6 +2,7 @@
 const tls = require('tls');
 
 function bufferTox509(buffer) {
+  // from https://github.com/yorkie/node-x509-builder
 	if (typeof buffer !== 'string') {
 		buffer = buffer.toString('base64');
 	}
@@ -15,8 +16,14 @@ function bufferTox509(buffer) {
 	return result + '-----END CERTIFICATE-----';
 }
 
-// port, host, f
-// port, host, options, f
+/**
+ * Retrieve an x509 certificate
+ * @param  {number} port
+ * @param  {string} host
+ * @param  {[object]} options 
+ *
+ * @param  {function} f(err, certificate)
+ */
 function getCertificate(port, host, options, f) {
 	if (typeof options === 'function') {
 		f = options;
