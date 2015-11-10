@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha -t 10000 *.test.js"
   },
+  "bin":{
+    "x509-certificate": "cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FGRibreau/node-x509-certificate.git"
