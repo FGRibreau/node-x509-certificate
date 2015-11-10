@@ -20,7 +20,7 @@ function bufferTox509(buffer) {
  * Retrieve an x509 certificate
  * @param  {number} port
  * @param  {string} host
- * @param  {[object]} options 
+ * @param  {[object]} options
  *
  * @param  {function} f(err, certificate)
  */
@@ -36,6 +36,7 @@ function getCertificate(port, host, options, f) {
 		}
 
 		var cert = socket.getPeerCertificate();
+    socket.end();
     f(null, bufferTox509(cert.raw));
 	});
 }
