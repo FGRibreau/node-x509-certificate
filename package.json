@@ -1,6 +1,6 @@
 {
   "name": "x509-certificate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Retrieve the public TLS certificate in x509 format from a distant host",
   "main": "x509-certificate.js",
   "scripts": {
