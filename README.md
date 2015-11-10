@@ -85,3 +85,5 @@ yeguHFu52jw40MG1i/t+VKHr0mBIgzIkg+VZTKhuLT9Er5dCd5MEQZLohDl3uyLO
 NXu4AQtPaYqjK+GK9NPqmEnotx5WFf7V8TDX/qHdRx/xAtY=
 -----END CERTIFICATE-----
 ```
+
+# [Changelog](/CHANGELOG.md)
