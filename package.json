@@ -1,0 +1,29 @@
+{
+  "name": "node-x509-certificate",
+  "version": "1.0.0",
+  "description": "Retrieve the public TLS certificate in x509 format from a distant host",
+  "main": "x509-certificate.js",
+  "scripts": {
+    "test": "mocha -t 10000 *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FGRibreau/node-x509-certificate.git"
+  },
+  "keywords": [
+    "certificate",
+    "x509",
+    "tls",
+    "socket"
+  ],
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FGRibreau/node-x509-certificate/issues"
+  },
+  "homepage": "https://github.com/FGRibreau/node-x509-certificate#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3"
+  }
+}
